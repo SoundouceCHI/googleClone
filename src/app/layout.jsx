@@ -1,3 +1,4 @@
+import Footer from '@/component/Footer'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -7,8 +8,11 @@ export default function RootLayout({ children }) {
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer/>
+      
+      </body>
     </html>
   )
 }
